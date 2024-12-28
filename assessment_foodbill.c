@@ -6,7 +6,8 @@ main()
 
 	
 {
-	int choice, quantity;
+	int  choice, quantity;
+	char ch;
 	float totalbill=0;
 	
 	printf("-----------menu--------------");
@@ -46,11 +47,10 @@ main()
 	}
 	
 		
-	
-			printf("\n\n\t do you want to order more? (1 for yes, 0 for no) :");
-			scanf(" %d",&choice);
+			printf("\n\n\t do you want to order more? (y for yes, n for no) :");
+			scanf(" %c",&ch);
 		
-			if(choice == 0)
+			if(ch == 'n')
 			{
 				printf("\n\n\t your totalbill is: rs. %2.f",totalbill);
 				break;
